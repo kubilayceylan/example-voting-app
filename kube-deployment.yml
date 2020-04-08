@@ -102,7 +102,7 @@ metadata:
   labels:
     app: result
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
   - port: 5001
     targetPort: 80
@@ -142,7 +142,7 @@ metadata:
   labels:
     apps: vote
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
     - port: 5000
       targetPort: 80
